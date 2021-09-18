@@ -1,0 +1,211 @@
+/*ESTRUTURA GERAL*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background:#d5ddf2;
+    color:#35373d;
+    font-family:'Arial', sans-serif;
+}
+main section{
+    padding:0 15px;
+    padding-top:220px;
+}
+main section h1{
+    text-align:center;
+    font-size:1.3em;
+    line-height: 4;
+    font-weight:100;
+}
+main section p{
+    text-align:justify;
+    line-height: 1.5;
+}
+main section img{
+    max-width:100%;
+}
+main section+section{
+    border-top:1px solid #35373d;
+}
+@media (min-width:760px){
+    main section{
+        padding-top:14vh;
+    }
+}
+@media (min-width:900px){
+    main section{
+        padding-top:8vh;
+    }
+    main #criptografia div{
+        padding-top:8vh;
+    }
+}
+
+
+/*HEADER*/
+header{
+    width:100vw;
+    height:7,5vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom:1px solid #35373d;
+    position:fixed;
+}
+header #logo{
+    width:70px;
+}
+header #logo img{
+    width:100%;
+}
+header h1{
+    font-size:1.2em;
+    padding-right: 25px;
+    font-weight: 100;
+}
+header ul{
+    display:flex;
+    flex-direction:column;
+    background:#f1f1f2;
+}
+header li a:hover{
+    background:#d5ddf2;
+    font-weight:bold;
+}
+header ul li a{
+    text-decoration:none;
+    display:inline-block;
+    background:#f1f1f2;
+    width:100vw;
+    text-align: center;
+    padding:15px;
+}
+header ul li{
+    border-top:1px solid #35373d;
+}
+@media (min-width:760px){
+    header{
+        justify-content:space-around;
+    }
+    header ul{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+    }
+    header ul li{
+        padding: 0 20px;
+    }
+    header ul li{
+        border:1px solid #35373d;
+        border-bottom:none;
+    }
+    header ul li a{
+        display:inline;
+        background:#d5ddf2;
+        padding:0;
+        line-height:75px;
+    }
+    header ul li{
+        list-style:none;
+    }
+    header ul li+li{
+        border-left:none;
+    }
+}
+@media (min-width:900px){
+    header ul li:nth-child(3) {
+        border-right:none;
+    }
+    header ul li{
+        border-top:none;
+    }
+}
+
+/*O QUE É RANSOMWARE?*/
+#ransomware{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    align-content:space-around;
+}
+#ransomware img{
+    margin:20px 0;
+}
+@media (min-width:900px){
+    #ransomware{
+        flex-direction:row;
+        justify-content:space-around;
+    }
+    #ransomware div{
+        margin-bottom: 30px;
+    }
+    #ransomware div, #ransomware img{
+        width:25%;
+    }
+}
+
+/*CRIPTOGRAFIA*/
+#criptografia{
+    display:flex;
+    flex-direction:column;
+}
+#criptografia div p, #criptografia div img{
+    margin-bottom:20px;
+}
+@media (min-width:900px){
+    #criptografia{
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
+        padding: 20px 0; 
+    }
+    #criptografia div{
+        width:25%;
+    }
+}
+
+/*PROTEÇÃO CONTRA RANSOMWARE*/
+#protecao{
+    padding-left:25px;
+}
+@media (max-width:400px){
+    #protecao h1{
+        font-size:0.9em;
+    }
+}
+#protecao ul{
+    display:flex;
+    flex-direction:column;
+}
+#protecao ul li p, #protecao ul li img{
+    margin-bottom:30px;
+}
+@media(min-width:900px){
+    #protecao ul{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        
+    }
+    #protecao ul li{
+        width:25%;
+    }
+    #protecao ul li+li{
+        margin-left:30px;
+    }
+    #protecao ul li img{
+        width:100%;
+    }
+}
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    border-top:1px solid #35373d;
+}
+footer p{
+    line-height:3;
+}
