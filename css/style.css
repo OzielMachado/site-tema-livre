@@ -150,6 +150,7 @@ header ul li{
 #criptografia{
     display:flex;
     flex-direction:column;
+    align-items:center;
 }
 #criptografia div p, #criptografia div img{
     margin-bottom:20px;
@@ -178,6 +179,7 @@ header ul li{
 #protecao ul{
     display:flex;
     flex-direction:column;
+    align-items:center;
 }
 #protecao ul li p, #protecao ul li img{
     margin-bottom:30px;
